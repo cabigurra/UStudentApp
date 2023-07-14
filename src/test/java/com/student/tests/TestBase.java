@@ -10,7 +10,6 @@ public class TestBase {
 
     @BeforeClass
     public static void initUrl() {
-
         prop = PropertyReader.getInstance();
 
         RestAssured.baseURI = prop.getProperty("baseUrl");

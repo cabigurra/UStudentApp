@@ -2,6 +2,7 @@ package com.student.tests;
 
 import com.github.javafaker.Faker;
 import com.student.requests.RequestFactory;
+import com.student.specs.SpecificationFactory;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import io.qameta.allure.junit4.DisplayName;
@@ -23,10 +24,8 @@ public class CrudTest extends TestBase {
     public void getAllStudents() {
         requests.getAllStudents()
                 .then()
-                .log()
-                .body()
+                .spec(SpecificationFactory.getGenericResponseSpec())
                 .statusCode(200);
-
     }
 
     @Story("This is a CRUD testing story")
