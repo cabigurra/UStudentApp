@@ -4,3 +4,7 @@ Open a terminal and type:
 
 Build the project:
 /StudentAPP$ mvn clean test
+
+Allure
+/StudentAPP$ cd target
+/StudentAPP$ allure serve all
