@@ -7,11 +7,12 @@ import io.restassured.response.Response;
 
 public class RequestFactory extends TestBase {
 
+    RestClient restClient = new RestClient();
+
     //@Step("Getting all the student information from the database")
     public Response getAllStudents() {
-        Response response = RestAssured.given()
-                .when()
-                .get();
+        Response response = restClient.doGetRequest("");
+
         return response;
     }
 
