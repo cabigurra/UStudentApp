@@ -9,7 +9,6 @@ public class RequestFactory extends TestBase {
 
     RestClient restClient = new RestClient();
 
-    //@Step("Getting all the student information from the database")
     public Response getAllStudents() {
         Response response = restClient.doGetRequest("");
 
