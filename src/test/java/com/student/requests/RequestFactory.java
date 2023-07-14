@@ -7,7 +7,7 @@ import io.restassured.response.Response;
 
 public class RequestFactory extends TestBase {
 
-    @Step("Getting all the student information from the database")
+    //@Step("Getting all the student information from the database")
     public Response getAllStudents() {
         Response response = RestAssured.given()
                 .when()
